@@ -11,9 +11,9 @@ __Δημήτριος Χαϊτίδης (Dimitrios Chaitidis) (ΑΕΜ: 9310)
 
 Ανοίγωντας το file starter_se.py που χρησιμοποιήθηκε για την εκτέλεση του Hello world βλέπουμε μερικά βασικά χαρακτηριστικά.
 
-__CPU__ : parser.add_argument("--cpu-freq", type=str, default="1GHz")
+-__CPU__ : parser.add_argument("--cpu-freq", type=str, default="1GHz")
 
-__Caches__: cpu_types = {
+-__Caches__: cpu_types = {
     "atomic" : ( AtomicSimpleCPU, None, None, None, None),
     "minor" : (MinorCPU,
                devices.L1I, devices.L1D,
@@ -26,7 +26,7 @@ __Caches__: cpu_types = {
 }
 Ωστόσο γνωρίζουμε απο την εντολή που δώσαμε οτι η CPU που χρησιμοποιήθηε είναι η 'minor'
 
-__Μνήμη__ :parser.add_argument("--mem-type", default="DDR3_1600_8x8",
+-__Μνήμη__ :parser.add_argument("--mem-type", default="DDR3_1600_8x8",
                         choices=ObjectList.mem_list.get_names(),
                         help = "type of memory to use")
 
@@ -37,15 +37,15 @@ __Μνήμη__ :parser.add_argument("--mem-type", default="DDR3_1600_8x8",
 
 Ανοίγωντας το αρχείο config.json config.ini παρατηρούμε οτι μας παρέχονται πληροφορίες  για το σύστημα που εξομοιώνει ο Gem5 . Επίσης χρησιμοποιώντας το αρχέιο stats.txt μπορούμε να δούμε για τις παρακάτω εντολές το αποτέλεσμα τους και την σημασία τους (δηλαδή τι απεικονίζει η καθε μία) :
 
-__sim_seconds__ :   0.000035 # Number of seconds simulated
+-__sim_seconds__ :   0.000035 # Number of seconds simulated
 
-__sim_insts__:      5027     # Number of instructions simulated
+-__sim_insts__:      5027     # Number of instructions simulated
 
-__host_inst_rate__: 34489    # Simulator instruction rate (inst/s)
+-__host_inst_rate__: 34489    # Simulator instruction rate (inst/s)
 
-__commited instructions__: system.cpu_cluster.cpus.committedInsts  5027   # Number of instructions committed
+-__commited instructions__: system.cpu_cluster.cpus.committedInsts  5027   # Number of instructions committed
 
-__L2 cache__: system.cpu_cluster.l2.demand_accesses::.cpu_cluster.cpus.inst  327     # number of demand (read+write) accesses
+-__L2 cache__: system.cpu_cluster.l2.demand_accesses::.cpu_cluster.cpus.inst  327     # number of demand (read+write) accesses
 
 
 Στην εργασία αυτή επίσης μας ζητήθηλε να αναζητήσουμε πληροφορίες για τους in-order cpu's που χρησιμοποιούμαι στον Gem5. 
