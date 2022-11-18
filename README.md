@@ -1,7 +1,7 @@
 # ComputerArchitecture
-Lab Computer Architecture
+__Lab Computer Architecture
 
-Δημήτριος Χαϊτίδης (Dimitrios Chaitidis) (ΑΕΜ: 9310)
+__Δημήτριος Χαϊτίδης (Dimitrios Chaitidis) (ΑΕΜ: 9310)
 
 Στο πρώτο εργαστήριο κλιθήκαμε να εγκαταστήσουμε το Gem5 μέσω ενός λογισμικού που δουλεύει παράλληλα με το λογισμικό του υπολογιστή μας. Συγκεκριμένα στον υπολογιστή μας που δουλεύει με windows να τρέξουμε Linux. Η διαδικασία αυτή επιτυγχάνεται μέσω ενος Virtual Box Machine. Επι της ουσίας δημιουργείται ενα περιβάλλον εργασίας εντός του τρέχοντος λογισμικού (windows) και εκεί χρησιμοποιούμαι το επιθυμητό λογισμικό (Linux). 
 Στο περιβάλλον εργασίας αυτό (Linux) πειραματιζόμαστε με το Gem5. Ο Gem5 μας επιτρέπει να δοκιμάσουμε διάφορους πειραματισμούς σε ότι αφορά την αρχιτεκτονική του υπολογιστή μας. Προσφέρει πληροφορίες για την αρχιτεκτονική του υπολογιστή για την οποία χρησιμοποιήσαμε για να τρέξουμε το εκάστοτε πρόγραμμα.
@@ -11,9 +11,9 @@ Lab Computer Architecture
 
 Ανοίγωντας το file starter_se.py που χρησιμοποιήθηκε για την εκτέλεση του Hello world βλέπουμε μερικά βασικά χαρακτηριστικά.
 
-CPU : parser.add_argument("--cpu-freq", type=str, default="1GHz")
+__CPU__ : parser.add_argument("--cpu-freq", type=str, default="1GHz")
 
-Caches: cpu_types = {
+__Caches__: cpu_types = {
     "atomic" : ( AtomicSimpleCPU, None, None, None, None),
     "minor" : (MinorCPU,
                devices.L1I, devices.L1D,
@@ -26,7 +26,7 @@ Caches: cpu_types = {
 }
 Ωστόσο γνωρίζουμε απο την εντολή που δώσαμε οτι η CPU που χρησιμοποιήθηε είναι η 'minor'
 
-Μνήμη :parser.add_argument("--mem-type", default="DDR3_1600_8x8",
+__Μνήμη__ :parser.add_argument("--mem-type", default="DDR3_1600_8x8",
                         choices=ObjectList.mem_list.get_names(),
                         help = "type of memory to use")
 
@@ -37,15 +37,15 @@ Caches: cpu_types = {
 
 Ανοίγωντας το αρχείο config.json config.ini παρατηρούμε οτι μας παρέχονται πληροφορίες  για το σύστημα που εξομοιώνει ο Gem5 . Επίσης χρησιμοποιώντας το αρχέιο stats.txt μπορούμε να δούμε για τις παρακάτω εντολές το αποτέλεσμα τους και την σημασία τους (δηλαδή τι απεικονίζει η καθε μία) :
 
-sim_seconds :   0.000035 # Number of seconds simulated
+__sim_seconds__ :   0.000035 # Number of seconds simulated
 
-sim_insts:      5027     # Number of instructions simulated
+__sim_insts__:      5027     # Number of instructions simulated
 
-host_inst_rate: 34489    # Simulator instruction rate (inst/s)
+__host_inst_rate__: 34489    # Simulator instruction rate (inst/s)
 
-commited instructions: system.cpu_cluster.cpus.committedInsts  5027   # Number of instructions committed
+__commited instructions__: system.cpu_cluster.cpus.committedInsts  5027   # Number of instructions committed
 
-L2 cache: system.cpu_cluster.l2.demand_accesses::.cpu_cluster.cpus.inst  327     # number of demand (read+write) accesses
+__L2 cache__: system.cpu_cluster.l2.demand_accesses::.cpu_cluster.cpus.inst  327     # number of demand (read+write) accesses
 
 
 Στην εργασία αυτή επίσης μας ζητήθηλε να αναζητήσουμε πληροφορίες για τους in-order cpu's που χρησιμοποιούμαι στον Gem5. 
@@ -65,14 +65,14 @@ H MinorO3CPU δεν χρησιμοποιείται καθως είναι out of 
 Και φυσικά όπως και χρησιμοποιήσαμε στο παράδειγμα μας υπάρχει η MinorCPU.
 Για τον BaseSimpleCPU μαθαίνουμε τα εξής:
 Είναι απλή abstract CPU χωρίς pipeline. Συνεπαγωγικά είναι μη ρεαλιστική αλλα παράλληλα είναι πολύ γρήγορη. Είναι ουσιαστικά ενας εναλλακτικός τρόπος για να κάνει fast forwarding boot κατα την λειτουργία τους.
-Για τον AtomicSimpleCPU:
+Για τον __AtomicSimpleCPU__:
 Είναι το προεπιλεγμένο μοντέλο επεξεργαστή με ακαριαία προσπέλαση μνήμης. Ωστόσο επίσης δεν είναι ρεαλιστικός.
-MinorCPU : 
+__MinorCPU__ : 
 Αποτελεί ένα in-order μοντέλο με προκαθορισμένη διαδικασία διοχέτευσης αλλά προσαρμοζόμενες δομές δεδομένων και προσαρμοζόμενη συμπεριφορά εκτέλεσης.Το σταθερό pipeline του βοηθάει στην αναγνώριση και οπτικοποίηση μέσα σε αυτό της κάθε εντολής από μια προσομοίωση.
-Για τον TimingSimpleCPU:
+Για τον __TimingSimpleCPU__:
 Οι προσπελάσεις μνήμης είναι ρεαλιστικές αλλα ο επεξεργαστής δεν έχει pipeline. Η προσομοίωση είναι γρήγορη αλλά πιο αργή από τον AtomicSimpleCPU. Οι Caches κάνουν μεγάλη διαφορά και οδηγούν σε γρηγορότερους χρόνους προσπέλασης μνήμης.
 
 
-Συνολικά: 
+__Συνολικά: 
 Η εργασία αυτή για το πρώτο εργαστήριο του μαθήματος μας εξοικίωσε με την χρήση ενός ακόμα λειτουργικου συστήματος στο ήδη υπάρχον λειτουργικό σύστημα μας.
 Επίσης εξοικιωθηκαμε με τον Gem5 , ενα εξαιρετικό εργαλείο για την επιστήμη της Αρχιτεκτονικής των Υπολογιστών. Δοκιμάσαμε να τρέξουμε "προγράμματα" και να δούμε τα αποτελέσματα απο διάφορες μετρικές που μας ενδιαφέρουν ενώ παράλληλα μάθαμε διαφορες πληροφιές για τα διαφορετικά μοντέλα επεξεργαστών που υποστηρίζει ο Gem5 και στοιχεία/πληροφορίες για αυτούς. 
