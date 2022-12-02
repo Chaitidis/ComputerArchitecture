@@ -104,3 +104,11 @@ system.cpu.icache.overall_miss_rate::total  0.000020                       # mis
 system.cpu.dcache.overall_miss_rate::total  0.121831                       # miss rate for overall accesses
 
 system.l2.overall_miss_rate::total          0.999972                       # miss rate for overall accesses
+
+
+
+Γενικότερα παρατηρούμε ότι όσο αυξάνονται τα miss rates απο το εκάστοτε Benchmark, τότε αυξάνεται και το CPI που είναι λογικό καθώς σε περίπτωση 
+που δεν βρεί κάτι (miss rate) τότε θα χρειαστεί περισσότερο χρόνο να το βρεί. Ετσι καταλήγουμε να έχουμε μεγαλύτερο CPI (cycles per instruction).
+
+ system.clk_domain.clock                          1000                       # Clock period in ticks
+ system.cpu_clk_domain.clock                      1000                       # Clock period in ticks
