@@ -1,6 +1,6 @@
-                   #Computers architecture Lab 2
-        #Chaitidis Dimitrios (AEM: 9310)
-        #email:chaitidi@ece.auth.gr**
+#Computers architecture Lab 2
+#Chaitidis Dimitrios (AEM: 9310)
+#email:chaitidi@ece.auth.gr**
 
 
 Στην αρχή της εργασίας μας ζητήθηκε να τρέξουμε μεμονομένα τις παρακάτων εντολές.
