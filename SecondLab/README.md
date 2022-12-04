@@ -1,5 +1,9 @@
 #Computers architecture Lab 2
+
+
 #Chaitidis Dimitrios (AEM: 9310)
+
+
 #email:chaitidi@ece.auth.gr**
 
 
