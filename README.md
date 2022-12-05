@@ -11,7 +11,7 @@ __Email__: chaitidi@ece.auth.gr
 
 ./build/ARM/gem5.opt configs/example/arm/starter_se.py --cpu='minor' "tests/test-progs/hello/bin/arm/linux/hello" # Hello world!
 
-######Ερώτημα 1.
+###### Ερώτημα 1.
 
 Ανοίγωντας το file starter_se.py που χρησιμοποιήθηκε για την εκτέλεση του Hello world βλέπουμε μερικά βασικά χαρακτηριστικά.
 
