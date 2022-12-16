@@ -5,7 +5,7 @@
 ####  Chaitidis Dimitrios (AEM: 9310)
 
 
-#### email:chaitidi@ece.auth.gr**
+#### email:chaitidi@ece.auth.gr
 
 
 
