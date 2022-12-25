@@ -62,6 +62,15 @@ spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.
 Από τα αρχεία stats.txt του φακέλου spec_results για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα παρακάτω αποτελέσματα:
 
 
+
+|                          ***Specbzip***                       | 
+| :---------------------------------------------:|------------- | 
+|    **sim_seconds**                             | 0.083982 sec | 
+|              **system.cpu.cpi**                | 1.679650 sec | 
+| **system.cpu.icache.overall_miss_rate::total** | 0.000077 sec | 
+| **system.cpu.dcache.overall_miss_rate::total** | 0.014798 sec |  
+|     **system.l2.overall_miss_rate::total**     | 0.282163 sec | 
+
 Για το αρχείο **specbzip**
 
 sim_seconds                                  0.083982                       # Number of seconds simulated
@@ -80,6 +89,16 @@ system.l2.overall_miss_rate::total           0.282163                       # mi
 
 Για το αρχείο **spechmmer**
 
+
+
+|                          ***spechmmer***                      | 
+| :---------------------------------------------:|------------- | 
+|    **sim_seconds**                             | 0.059396 sec | 
+|              **system.cpu.cpi**                | 1.187917 sec | 
+| **system.cpu.icache.overall_miss_rate::total** | 0.000221 sec | 
+| **system.cpu.dcache.overall_miss_rate::total** | 0.001637 sec |  
+|     **system.l2.overall_miss_rate::total**     | 0.077760 sec | 
+
 sim_seconds                                  0.059396                       # Number of seconds simulated
 
 system.cpu.cpi                               1.187917                       # CPI: cycles per instruction
@@ -96,6 +115,16 @@ system.l2.overall_miss_rate::total           0.077760                       # mi
 
 Για το αρχειο **speclibm**
 
+
+|                          ***speclibm***                       | 
+| :---------------------------------------------:|------------- | 
+|    **sim_seconds**                             | 0.000045 sec | 
+|              **system.cpu.cpi**                | 8.032258 sec | 
+| **system.cpu.icache.overall_miss_rate::total** | 0.094160 sec | 
+| **system.cpu.dcache.overall_miss_rate::total** | 0.063140 sec |  
+|     **system.l2.overall_miss_rate::total**     | 0.926230 sec | 
+
+
 sim_seconds                                  0.000045                       # Number of seconds simulated
 
 system.cpu.cpi                               8.032258                       # CPI: cycles per instruction
@@ -111,6 +140,15 @@ system.l2.overall_miss_rate::total           0.926230                       # mi
 
 Για το αρχείο **specmcf**
 
+|                          ***specmcf***                        | 
+| :---------------------------------------------:|------------- | 
+|    **sim_seconds**                             | 0.064955 sec | 
+|              **system.cpu.cpi**                | 1.299095 sec | 
+| **system.cpu.icache.overall_miss_rate::total** | 0.023612 sec | 
+| **system.cpu.dcache.overall_miss_rate::total** | 0.002108 sec |  
+|     **system.l2.overall_miss_rate::total**     | 0.055046 sec | 
+
+
 sim_seconds                                  0.064955                       # Number of seconds simulated
 
 system.cpu.cpi                               1.299095                       # CPI: cycles per instruction
@@ -124,6 +162,15 @@ system.l2.overall_miss_rate::total           0.055046                       # mi
 
 
 Για το αρχείο **specsjeng**
+
+|                          ***specsjeng***                      | 
+| :---------------------------------------------:|------------- | 
+|    **sim_seconds**                             | 0.513528 sec | 
+|              **system.cpu.cpi**                | 10.270554 sec| 
+| **system.cpu.icache.overall_miss_rate::total** | 0.000020 sec | 
+| **system.cpu.dcache.overall_miss_rate::total** | 0.121831 sec |  
+|     **system.l2.overall_miss_rate::total**     | 0.999972 sec | 
+
 
 sim_seconds                                 0.513528                       # Number of seconds simulated
 
