@@ -40,6 +40,47 @@
 Συνεπαγωγικά αυτό που θα χρειαζόμασταν θα ήταν να μας προσφέρει σαν πληροφορίες τον χρόνο εκτέλεσης του προγράμματος (cpi time) και τον ανενεργό χρόνο του (idle time).
 
 
+
+###### 3ο Ερώτημα
+
+<table>
+<thead>
+<tr>
+<th>Processors</th>
+<th>Technology</th>
+<th>Core clockrate</th>
+<th>Total Leakage</th>
+<th>Peak Dynamic</th>
+<th>Total Power Consumption</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XEON</td>
+<td>65nm</td>
+<td>3400MHz</td>
+<td>36.8319 W</td>
+<td>98.1063 W</td>
+<td>134.938 W</td>
+</tr>
+<tr>
+<td>ARM A9</td>
+<td>40nm</td>
+<td>2000MHz</td>
+<td>0.108687 W</td>
+<td>1.6332 W</td>
+<td>1.74189 W</td>
+</tr>
+</tbody>
+</table>
+
+Η συνολική κατανάλωση ισχύος του *ARM A9* ισούται με 1.74189 W. Υποθέτοντας ότι ο XEON είναι 40 φορές ταχύτερος τότε ο ARM θα καταναλώνει κατά τη διάρκεια εκτέλεσης του προγράμματος 40 * 1.74189 W = 69,9276 W < 134.938 W. Ακόμη κι αν ο XEON μένει idle το υπόλοιπο χρονικό διάστημα ο ARM είναι περισσότερο energy efficient από τον XEON.
+
+
+
+
+
+
 ##### Βιβλιογραφία
 https://www.einfochips.com/blog/power-dissipation-in-vlsi-moving-to-low-power-soc-design-while-improving-performance/
 (https://github.com/HewlettPackard/mcpat)  
