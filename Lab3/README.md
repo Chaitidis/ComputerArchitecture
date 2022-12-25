@@ -1,7 +1,11 @@
-### Computer architecture 
-### Lab 3
-##### Chaitidis Dimitrios 
-##### Χαϊτίδης Δημήτριος (ΑΕΜ 9310)
+# ComputerArchitecture
+__Lab Computer Architecture__
+
+__Δημήτριος Χαϊτίδης (Dimitrios Chaitidis) (ΑΕΜ: 9310)__
+
+__Email__: chaitidi@ece.auth.gr
+
+
 
 ##### Βήμα 1
 
