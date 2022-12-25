@@ -7,6 +7,9 @@ __Email__: chaitidi@ece.auth.gr
 
 
 
+##### Βήμα 1
+
+
 Στην αρχή της εργασίας μας ζητήθηκε να τρέξουμε μεμονομένα τις παρακάτων εντολές.
 
 - ./build/ARM/gem5.opt -d spec_results/specbzip configs/example/se.py --cputype=MinorCPU --caches --l2cache -c spec_cpu2006/401.bzip2/src/specbzip -o "spec_cpu2006/401.bzip2/data/input.program 10" -I 100000000
@@ -22,22 +25,16 @@ __Email__: chaitidi@ece.auth.gr
 spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.of" -I 100000000
 
 
+###### Ερώτημα 1
 
 
-
-
-
-
-
-
-
-Αφού έχουμε τρέξει μεμονομένα τις εντολές που μας δόθηκαν προχωρούμε στο επόμενο ερώτημα.
+Αφού έχουμε τρέξει μεμονομένα τις εντολές που μας δόθηκαν αναζητούμε τις βασικές παραμέτρους για τον επεξεργαστή που εξομοιώνει το *Gem5* .
 Το μέγεθος της L1 instruction, L1 Data caches και της L2 caches.Το associativity κάθε μίας από αυτές και το μέγεθος της cache line
 Τα μεγέθη αυτά είναι ίδια για όλα τα Benchmarks
-Από τα αρχεία config.ini του φακέλου spec_results για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα εξής μεγέθη:
+Από τα αρχεία *config.ini* του φακέλου *spec_results* για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα εξής μεγέθη:
 
 
-Dcache_size & associativity
+-Dcache_size & associativity
 
 assoc=2
 size=65536
