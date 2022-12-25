@@ -34,33 +34,35 @@ spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.
 Από τα αρχεία *config.ini* του φακέλου *spec_results* για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα εξής μεγέθη:
 
 
--Dcache_size & associativity
+- Dcache_size & associativity
 
-assoc=2
-size=65536
+1. assoc=2
+2. size=65536
 
-Icache_size & associativity
+- Icache_size & associativity
 
-assoc=2
-size=32768
+1. assoc=2
+2. size=32768
 
 
 
-L2_cache_size & associativity
+- L2_cache_size & associativity
 
-assoc=8
-size=2097152
+1. assoc=8
+2. size=2097152
 
-Cache_line_size 
+- Cache_line_size 
 
-cache line size:64B
+1. cache line size:64B
 
+
+###### Ερώτημα 2
 
 
 Από τα αρχεία stats.txt του φακέλου spec_results για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα παρακάτω αποτελέσματα:
 
 
-Για το αρχείο specbzip
+Για το αρχείο **specbzip**
 
 sim_seconds                                  0.083982                       # Number of seconds simulated
 
@@ -76,7 +78,7 @@ system.l2.overall_miss_rate::total           0.282163                       # mi
 
 
 
-Για το αρχείο spechmmer
+Για το αρχείο **spechmmer**
 
 sim_seconds                                  0.059396                       # Number of seconds simulated
 
@@ -92,7 +94,7 @@ system.l2.overall_miss_rate::total           0.077760                       # mi
 
 
 
-Για το αρχειο speclibm
+Για το αρχειο **speclibm**
 
 sim_seconds                                  0.000045                       # Number of seconds simulated
 
@@ -107,7 +109,7 @@ system.l2.overall_miss_rate::total           0.926230                       # mi
 
 
 
-Για το αρχείο specmcf
+Για το αρχείο **specmcf**
 
 sim_seconds                                  0.064955                       # Number of seconds simulated
 
@@ -121,7 +123,7 @@ system.l2.overall_miss_rate::total           0.055046                       # mi
 
 
 
-Για το αρχείο specsjeng
+Για το αρχείο **specsjeng**
 
 sim_seconds                                 0.513528                       # Number of seconds simulated
 
