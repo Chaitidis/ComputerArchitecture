@@ -62,6 +62,8 @@ spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.
 Από τα αρχεία stats.txt του φακέλου spec_results για κάθε ένα από τα specbzip, spechmmer, speclibm, specmcf, specsjeng παρατηρούμε τα παρακάτω αποτελέσματα:
 
 
+Για το αρχείο **specbzip** :
+
 
 |                          ***Specbzip***                       | 
 | :---------------------------------------------:|------------- | 
@@ -71,23 +73,10 @@ spec_cpu2006/470.lbm/data/lbm.in 0 1 spec_cpu2006/470.lbm/data/100_100_130_cf_a.
 | **system.cpu.dcache.overall_miss_rate::total** | 0.014798 sec |  
 |     **system.l2.overall_miss_rate::total**     | 0.282163 sec | 
 
-Για το αρχείο **specbzip**
-
-sim_seconds                                  0.083982                       # Number of seconds simulated
-
-system.cpu.cpi                               1.679650                       # CPI: cycles per instruction
-
-system.cpu.icache.overall_miss_rate::total   0.000077                       # miss rate for overall accesses
-
-system.cpu.dcache.overall_miss_rate::total   0.014798                       # miss rate for overall accesses
-
-system.l2.overall_miss_rate::total           0.282163                       # miss rate for overall accesses
 
 
 
-
-
-Για το αρχείο **spechmmer**
+Για το αρχείο **spechmmer** :
 
 
 
@@ -99,21 +88,10 @@ system.l2.overall_miss_rate::total           0.282163                       # mi
 | **system.cpu.dcache.overall_miss_rate::total** | 0.001637 sec |  
 |     **system.l2.overall_miss_rate::total**     | 0.077760 sec | 
 
-sim_seconds                                  0.059396                       # Number of seconds simulated
-
-system.cpu.cpi                               1.187917                       # CPI: cycles per instruction
-
-system.cpu.icache.overall_miss_rate::total   0.000221                       # miss rate for overall accesses
-
-system.cpu.dcache.overall_miss_rate::total   0.001637                       # miss rate for overall accesses
-
-system.l2.overall_miss_rate::total           0.077760                       # miss rate for overall accesses
 
 
 
-
-
-Για το αρχειο **speclibm**
+Για το αρχειο **speclibm** :
 
 
 |                          ***speclibm***                       | 
@@ -125,20 +103,11 @@ system.l2.overall_miss_rate::total           0.077760                       # mi
 |     **system.l2.overall_miss_rate::total**     | 0.926230 sec | 
 
 
-sim_seconds                                  0.000045                       # Number of seconds simulated
-
-system.cpu.cpi                               8.032258                       # CPI: cycles per instruction
-
-system.cpu.icache.overall_miss_rate::total   0.094160                       # miss rate for overall accesses
-
-system.cpu.dcache.overall_miss_rate::total   0.063140                       # miss rate for overall accesses
-
-system.l2.overall_miss_rate::total           0.926230                       # miss rate for overall accesses
 
 
 
 
-Για το αρχείο **specmcf**
+Για το αρχείο **specmcf** :
 
 |                          ***specmcf***                        | 
 | :---------------------------------------------:|------------- | 
@@ -149,19 +118,11 @@ system.l2.overall_miss_rate::total           0.926230                       # mi
 |     **system.l2.overall_miss_rate::total**     | 0.055046 sec | 
 
 
-sim_seconds                                  0.064955                       # Number of seconds simulated
-
-system.cpu.cpi                               1.299095                       # CPI: cycles per instruction
-
-system.cpu.icache.overall_miss_rate::total   0.023612                       # miss rate for overall accesses
-
-system.cpu.dcache.overall_miss_rate::total   0.002108                       # miss rate for overall accesses
-
-system.l2.overall_miss_rate::total           0.055046                       # miss rate for overall accesses
 
 
 
-Για το αρχείο **specsjeng**
+
+Για το αρχείο **specsjeng** :
 
 |                          ***specsjeng***                      | 
 | :---------------------------------------------:|------------- | 
@@ -171,16 +132,6 @@ system.l2.overall_miss_rate::total           0.055046                       # mi
 | **system.cpu.dcache.overall_miss_rate::total** | 0.121831 sec |  
 |     **system.l2.overall_miss_rate::total**     | 0.999972 sec | 
 
-
-sim_seconds                                 0.513528                       # Number of seconds simulated
-
-system.cpu.cpi                              10.270554                      # CPI: cycles per instruction
-
-system.cpu.icache.overall_miss_rate::total  0.000020                       # miss rate for overall accesses
-
-system.cpu.dcache.overall_miss_rate::total  0.121831                       # miss rate for overall accesses
-
-system.l2.overall_miss_rate::total          0.999972                       # miss rate for overall accesses
 
 
 
@@ -202,7 +153,7 @@ system.l2.overall_miss_rate::total          0.999972                       # mis
 
 
 
-#### Συμπεράσματα/Κριτική
+#### __Συνολικά__ :
 
 Η εργασία αυτή αρχικά ήταν ιδιαίτερα πιο απαιτητική και χρονοβόρα απο την προηγούμενη. Απαιτούσε πολύ περισσότερες γνώσεις τόσο για τον gem5 όσο και για το λειτουργικό που χρησιμοποιούμε. Προσωπικά δυσκολεύτηκα ιδιαίτερα πολύ για το κομμάτι που απαιτούσε την αυτοματοποίηση της εκτέλεσης των εντολών. Λόγω των προβλημάτων που συνάντησα δυστηχώς δεν μπόρεσα να αφιερώσω επαρκή χρόνο στην "θεωρία" που χρειαζόταν για την εύρεση των καλύτερων "specs", ουσιαστικά να πληρείται η προυπόθεση του ερωτήματος "Ως μέγιστη απόδοση θεωρούμε το ελάχιστο CPI (όσο πιο κοντά στο 1 μπορεί να φτάσει)". 
 Να προσθέσω σαν σχόλιο για την εργασία πως λόγω τον προβλημάτων που αντιμετώπισα δεν κατάφερα επιτυχώς να δημιουργήσω τα απαιτούμενα γραφήματα για το βήμα 2 παρόλο που εν τέλει διεκπαιρέωσα την συλλογή των δεδομένων απο τα διάφορα benchmarks και βρίσκονται στον αντίστοιχο φάκελο.
