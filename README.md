@@ -1,7 +1,7 @@
 # ComputerArchitecture
 Lab Computer Architecture
 
-In the first laboratory of the subject (Computer Architecture) we used Gem5 to run different simulations and check different results based on the configurations we used.
+In this subject (Computer Architecture) we used gem5 to try different configurations and compare different benchmarks.
 
 - This repository is for the subject __Computer Architecture__ .
 
